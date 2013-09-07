@@ -4,18 +4,99 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>電卓deおみくじ</title>
-		
-		<script type="text/javascript" src="dentaku_v01.js">
-		</script>
-		<noscript>現在ご使用中のブラウザでは JavaScript は使用できません</noscript>
+
+		<script type="text/javascript" src="dentaku_v01.js"></script>
+		<noscript>
+			現在ご使用中のブラウザでは JavaScript は使用できません
+		</noscript>
 	</head>
 	<body bgcolor="#ffffff">
 
 		<h1>IPU塾2013　Web JavaScript コース総合演習</h1>
-		<div align="right"><h3>【　Program By Team めん'S　】</h3></div>
-		<div align="right"><font color="#ff0000"><h3>Last Update : 2013/09/07</h3></font></div>
-		
-		
+		<div align="right">
+			<h3>【　Program By Team めん'S　】</h3>
+		</div>
+		<div align="right">
+			<font color="#ff0000"><h3>Last Update : 2013/09/07</h3></font>
+		</div>
+
+		<form name="dentakuForm">
+			<table border="1" bgcolor="#87CEEB">	<!-- 電卓の全体の背景色 -->
+				<tr>
+					<td align="center" colspan="4" bgcolor="#000080"><font color="#FFFFFF"> <strong> おみくじ付き電卓</font></strong></td>
+				</tr>
+				<tr>
+					<td colspan="3">
+					<input type="text" size="24" name="nowLine" value="0">
+					</td>
+					<td align="center">
+					<input type="button" value="Ｃ" onclick="nowCrl()">
+					</td>
+				</tr>
+				<tr>
+					<td align="center">
+					<input type="button" value=" ７ " onclick="inValue(7)">
+					</td>
+					<td align="center">
+					<input type="button" value=" ８ " onclick="inValue(8)">
+					</td>
+					<td align="center">
+					<input type="button" value=" ９ " onclick="inValue(9)">
+					</td>
+					<td align="center">
+					<input type="button" value="÷" onclick="nowCalculate('/')">
+					</td>
+				</tr>
+				<tr>
+					<td align="center">
+					<input type="button" value=" ４ " onclick="inValue(4)">
+					</td>
+					<td align="center">
+					<input type="button" value=" ５ " onclick="inValue(5)">
+					</td>
+					<td align="center">
+					<input type="button" value=" ６ " onclick="inValue(6)">
+					</td>
+					<td align="center">
+					<input type="button" value="×" onclick="nowCalculate('*')">
+					</td>
+				</tr>
+				<tr>
+					<td align="center">
+					<input type="button" value=" １ " onclick="inValue(1)">
+					</td>
+					<td align="center">
+					<input type="button" value=" ２ " onclick="inValue(2)">
+					</td>
+					<td align="center">
+					<input type="button" value=" ３ " onclick="inValue(3)">
+					</td>
+					<td align="center">
+					<input type="button" value="－" onclick="nowCalculate('-')">
+					</td>
+				</tr>
+				<tr>
+					<td align="center">
+					<input type="button" value=" ０ " onclick="inValue(0)">
+					</td>
+					<td align="center">
+					<input type="button" value=" ・ " onclick="inValue('.')">
+					</td>
+					<td align="center">
+					<input type="button" value=" ＋ " onclick="nowCalculate('+')">
+					</td>
+					<td align="center">
+					<input type="button" value="＝" onclick="nowCalculate('=')">
+					</td>
+				</tr>
+				<tr>
+					<td align="center" colspan="4">
+					<input type="button" value=" おみくじを引く " onclick="inValue('PF')">
+					</td>
+				</tr>
+			</table>
+		</form>
+
 	</body>
 </html>
 

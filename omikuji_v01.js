@@ -2,8 +2,6 @@
  * @author XXYos01
  */
 
-
-//LLLLLLL
 //**********************************************************************
 //  getIndex(aPtSu,aOmikujiNo) 
 //	
@@ -134,22 +132,23 @@ function getOmikujiA() {
 	                                           + '◇金運　　' + kinun[getIndex(PtSu,OmikujiNo)]; */
 	                                           
 	                                           
-	var result1 = omikuji[OmikujiNo] + '<br><br>'
-	                                 + '◇願い事　' + negaigoto[getIndex(PtSu,OmikujiNo)] + '<br><br>'
-	                                 + '◇恋愛運　' + renaiun[getIndex(PtSu,OmikujiNo)] + '<br><br>'
-	                                 + '◇金運　　' + kinun[getIndex(PtSu,OmikujiNo)]; 
+	var result1 = '◎' + omikuji[OmikujiNo] + '<br><br>'
+	            + '◇願い事　' + negaigoto[getIndex(PtSu,OmikujiNo)] + '<br><br>'
+	            + '◇恋愛運　' + renaiun[getIndex(PtSu,OmikujiNo)] + '<br><br>'
+	            + '◇金運　　' + kinun[getIndex(PtSu,OmikujiNo)] + '<br><br>'
+	            + '（このメッセージはクリックすると消えます。）'; 
 	                                           
 	$('#otuge')
 	.html(result1)
 	.fadeIn('fast')
 	.animate({
-		'top': '70px'
+		'top': '190px'
 	}, 1000)
 	.animate({
-		'top': '60px'
+		'top': '180px'
 	}, 500)
-	.delay(5000)
-	.fadeOut('slow')
+	//.delay(5000)
+	//.fadeOut('slow')
 	.bind('click', function() {
 		$(this).stop(true, false).fadeOut('slow');
 	}); 

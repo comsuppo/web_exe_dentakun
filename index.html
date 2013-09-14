@@ -4,11 +4,15 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>電卓deおみくじ</title>
-
+		<script type="text/javascript" src="jquery-2.0.3.min.js">
+		</script>
+		<script type="text/javascript" src="omikuji_v01.js">
+		</script>
 		<script type="text/javascript" src="dentaku_v01.js"></script>
 		<noscript>
 			現在ご使用中のブラウザでは JavaScript は使用できません
 		</noscript>
+		<link href="omikuji_v01.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body bgcolor="#ffffff">
 
@@ -91,12 +95,17 @@
 				</tr>
 				<tr>
 					<td align="center" colspan="4">
-					<input type="button" value="あなたの運勢は？ おみくじを引く！" onclick="inValue('PF')">
+					<input type="button" value="あなたの運勢は？ おみくじを引く！" onclick="getOmikujiA()">
 					</td>
 				</tr>
 			</table>
 		</form>
 
+<div id="otuge">
+<p></p>
+</div>
+
+<!--	コメント	-->
+
 	</body>
 </html>
-

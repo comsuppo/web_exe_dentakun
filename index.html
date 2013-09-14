@@ -5,17 +5,27 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>電卓deおみくじ</title>
 		
+		<script type="text/javascript" src="jquery-2.0.3.min.js">
+		</script>
 		<script type="text/javascript" src="dentaku_v01.js">
 		</script>
 		<script type="text/javascript" src="omikuji_v01.js">
 		</script>
 		<noscript>現在ご使用中のブラウザでは JavaScript は使用できません</noscript>
+		
+		<link href="omikuji_v01.css" rel="stylesheet" type="text/css" />
+		
 	</head>
 	<body bgcolor="#ffffff">
 
 		<h1>IPU塾2013　Web JavaScript コース総合演習</h1>
 		<div align="right"><h3>【　Program By Team めん'S　】</h3></div>
 		<div align="right"><font color="#ff0000"><h3>Last Update : 2013/09/07</h3></font></div>
+		
+		<input type="button" value="あなたの運勢は？" onclick="getOmikujiA();">
+		<div id="otuge">
+			<p></p>
+		</div>
 		
 		
 	</body>
